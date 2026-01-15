@@ -73,6 +73,7 @@
 - fix withAnchor for deeply nested routes ([#40528](https://github.com/expo/expo/pull/40528) by [@Ubax](https://github.com/Ubax))
 - [ios] fix toolbar updates ([#42338](https://github.com/expo/expo/pull/42338) by [@Ubax](https://github.com/Ubax))
 - unify focused tab navigation behavior between JS and headless tabs ([#42235](https://github.com/expo/expo/pull/42235) by [@Ubax](https://github.com/Ubax))
+- Improve error handling in `useLoaderData()` hook ([#42260](https://github.com/expo/expo/pull/42260) by [@hassankhan](https://github.com/hassankhan))
 
 ### 💡 Others
 
