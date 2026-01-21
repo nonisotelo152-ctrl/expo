@@ -1,25 +1,53 @@
----
-title: Documentation for LLMs
-sidebar_title: llms.txt
-description: A list of Expo and EAS documentation files available for large language models (LLMs) and apps that use them.
-hideTOC: true
----
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simba Mercedes - Heladería</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --morado:#6A0DAD;
+      --blanco:#FFFFFF;
+      --negro:#000000;
+      --dorado:#FFD700;
+    }
+    *{box-sizing:border-box; margin:0; padding:0; font-family:'Montserrat', Arial, sans-serif;}
+    body{background:var(--blanco); color:var(--negro);}
+    a{text-decoration:none; color:inherit;}/* HEADER */
+header{
+  position:fixed; top:0; left:0; width:100%; z-index:1000;
+  background:var(--morado); color:var(--blanco);
+  display:flex; align-items:center; justify-content:space-between;
+  padding:12px 20px;
+}
+header .logo{font-weight:800; font-size:20px;}
+nav{display:flex; align-items:center; gap:20px;}
+nav a{color:var(--blanco); font-weight:500;}
+nav a:hover{color:var(--dorado);}    
+.btn-pedir{background:var(--dorado); color:var(--morado); padding:8px 16px; border-radius:20px; font-weight:600;}
+.cart{position:relative; font-size:20px;}
+.cart span{position:absolute; top:-6px; right:-10px; background:red; color:#fff; border-radius:50%; font-size:12px; padding:2px 6px;}
 
-import { Collapsible } from '~/ui/components/Collapsible';
+/* HERO */
+.hero{
+  height:100vh; background:url('https://images.unsplash.com/photo-1505253216365-4b3c42fef9f6') center/cover no-repeat;
+  position:relative; display:flex; align-items:center; justify-content:center;
+  text-align:center; padding:20px;
+}
+.hero::before{
+  content:""; position:absolute; inset:0; background:rgba(106,13,173,0.65);
+}
+.hero-content{position:relative; z-index:2;}
+.hero h1{color:#fff; font-size:48px; font-weight:800;}
+.hero p{color:var(--dorado); font-size:22px; margin:15px 0;}
+.hero .btn{background:var(--morado); color:#fff; padding:12px 24px; border-radius:25px; display:inline-block;}
 
-At Expo, we support the [llms.txt](https://llmstxt.org/) initiative to provide documentation for large language models (LLMs) and apps that use them. Below is a list of documentation files available:
+section{padding:80px 20px;}
+.section-title{background:var(--morado); color:#fff; text-align:center; padding:15px; font-weight:700; margin-bottom:40px;}
 
-- [/llms.txt](/llms.txt): A list of all available documentation files
-- [/llms-full.txt](/llms-full.txt): Complete documentation for Expo, including Expo Router, Expo Modules API, development process, and more
-- [/llms-eas.txt](/llms-eas.txt): Complete documentation for the Expo Application Services (EAS)
-- [/llms-sdk.txt](/llms-sdk.txt): Complete documentation for the latest Expo SDK
-
-<Collapsible summary="Looking for deprecated Expo SDK versions?">
-
-- [/llms-sdk-v53.0.0.txt](/llms-sdk-v53.0.0.txt): Documentation for the Expo SDK v53.0.0
-
-- [/llms-sdk-v52.0.0.txt](/llms-sdk-v52.0.0.txt): Documentation for the Expo SDK v52.0.0
-
-- [/llms-sdk-v51.0.0.txt](/llms-sdk-v51.0.0.txt): Documentation for the Expo SDK v51.0.0
-
-</Collapsible>
+/* SABORES */
+.sabores{display:grid; grid-template-columns:1fr 1fr; gap:20px;}
+.box{border:2px solid var(--morado); padding:20px;}
+.box h3{color:var(--morado); margin-bottom:15px;}
